@@ -1,0 +1,23 @@
+# API Surface (`/api/v1`)
+
+- `POST /auth/register`
+- `POST /auth/login`
+- `POST /auth/refresh`
+- `POST /auth/logout`
+- `POST /children`
+- `GET /children`
+- `DELETE /children/{child_id}`
+- `POST /devices/enrollment`
+- `POST /devices/enroll`
+- `GET /devices`
+- `POST /sessions`
+- `POST /sessions/{session_id}/stop`
+- `POST /locations`
+- `GET /locations/status/{child_id}`
+- `POST /geofences`
+- `GET /geofences/{child_id}`
+- `POST /panic`
+- `GET /alerts`
+- `POST /alerts/{alert_id}/read`
+- `GET /admin/diagnostics`
+- `GET /audit`

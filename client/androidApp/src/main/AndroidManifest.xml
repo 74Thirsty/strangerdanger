@@ -1,0 +1,3 @@
+<manifest package="com.strangerdanger.android" xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="StrangerDanger" />
+</manifest>
