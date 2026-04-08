@@ -41,6 +41,11 @@ class GeofenceRequest(BaseModel):
     radius_m: float
 
 
+@app.get("/")
+def root() -> dict[str, str]:
+    return {"status": "ok"}
+
+
 @app.post("/auth/register")
 def register(req: RegisterRequest) -> dict[str, str]:
     user = store.create_user(req.role)
