@@ -47,7 +47,7 @@ pytest -q
 - Storage is in-memory for MVP iteration speed.
 - Risk scoring in `app/risk.py` is deterministic and explainable.
 - WebSocket channel shape is `session:{id}` via `/ws/session/{id}` endpoint.
-=======
+
 # strangerdanger
 
 Production-oriented monorepo for family safety tracking with:
@@ -92,4 +92,4 @@ python scripts/seed_demo.py
 `/api/v1`
 
 See `docs/api.md` for endpoint list and `docs/architecture.md` for system architecture.
->>>>>>> theirs
+

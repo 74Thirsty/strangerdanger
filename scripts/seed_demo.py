@@ -1,7 +1,14 @@
-from backend.app.db.base import Base
-from backend.app.db.session import engine, SessionLocal
-from backend.app.models.models import Child, Device, TrackingSession, User
+from pathlib import Path
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from backend.app.core.security import hash_password
+from backend.app.db.base import Base
+from backend.app.db.session import SessionLocal, engine
+from backend.app.models.models import Child, Device, TrackingSession, User
 
 Base.metadata.create_all(bind=engine)
 
